@@ -1,20 +1,18 @@
-/* Makbule Hanım Kreş ve Gündüz Bakımevi CSS */
+
 
 :root {
-  /* Ana renkler */
-  --primary: #FF7F50;      /* Turuncu tonu */
-  --secondary-yellow: #FFD166; /* Pastel sarı */
-  --secondary-green: #06D6A0;  /* Pastel yeşil */
-  --secondary-blue: #118AB2;   /* Pastel mavi */
-  --secondary-pink: #EF476F;   /* Pastel pembe */
   
-  /* Nötr renkler */
+  --primary: #FF7F50;      
+  --secondary-yellow: #FFD166; 
+  --secondary-green: #06D6A0;  
+  --secondary-blue: #118AB2;   
+  --secondary-pink: #EF476F;   
+  
   --white: #FFFFFF;
   --light-gray: #F8F9FA;
   --medium-gray: #E9ECEF;
   --dark-gray: #333333;
   
-  /* Font boyutları */
   --font-size-xs: 0.75rem;
   --font-size-sm: 0.875rem;
   --font-size-md: 1rem;
@@ -24,7 +22,6 @@
   --font-size-xxxl: 3rem;
 }
 
-/* Genel Stiller */
 body {
   font-family: 'Open Sans', sans-serif;
   color: var(--dark-gray);
@@ -130,7 +127,7 @@ a:hover {
   border-left: 4px solid var(--secondary-green);
 }
 
-/* Bölümler */
+/* Sections */
 .section {
   padding: 5rem 0;
 }
@@ -151,7 +148,7 @@ a:hover {
   border-radius: 2px;
 }
 
-/* Özellikler Kartları */
+/* Cards */
 .feature-card {
   background-color: var(--white);
   border-radius: 10px;
@@ -178,7 +175,7 @@ a:hover {
   margin-bottom: 1rem;
 }
 
-/* Etkinlikler Listesi */
+/* Activities List */
 .activities-list {
   list-style: none;
   padding-left: 0;
@@ -200,7 +197,7 @@ a:hover {
   color: var(--secondary-green);
 }
 
-/* Galeri */
+/* Gallery */
 .gallery-item {
   margin-bottom: 1.5rem;
   border-radius: 10px;
@@ -219,7 +216,7 @@ a:hover {
   transform: scale(1.05);
 }
 
-/* İletişim Bölümü */
+/* Contact */
 .contact-info {
   background-color: var(--light-gray);
   padding: 2rem;
@@ -227,7 +224,6 @@ a:hover {
 }
 
 .contact-info i {
-  color: var(--primary);
   font-size: 1.5rem;
   margin-right: 1rem;
 }
@@ -308,7 +304,7 @@ a:hover {
   color: var(--medium-gray);
 }
 
-/* Responsive Ayarlamalar */
+/* Responsive  */
 @media (max-width: 991.98px) {
   .hero-title {
     font-size: var(--font-size-xxl);
@@ -321,23 +317,25 @@ a:hover {
 
 @media (max-width: 767.98px) {
   .section {
-    padding: 3rem 0;
+    padding: 1rem 0;
   }
   
   .hero {
-    padding: 4rem 0;
+    padding: 6rem 0 0 0;
   }
   
   .hero-title {
     font-size: var(--font-size-xl);
   }
-  
+  .hero-buttons {
+    margin-bottom: 1.5rem;
+  }
   .hero-subtitle {
     font-size: var(--font-size-md);
   }
 }
 
-/* Animasyonlar */
+/* Animations */
 .fade-in {
   animation: fadeIn 1s ease-in-out;
 }
